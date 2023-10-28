@@ -49,3 +49,4 @@
         network:
           assign_public_ip: true
         image_id: "{{ ami }}"
+        register: ec2
