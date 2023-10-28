@@ -11,7 +11,6 @@
   
     - name: Create a new Subnet
       amazon.aws.ec2_vpc_subnet:
-        name: "Ansible-Test"
         cidr: "{{ cidr }}"
         region: "{{ region }}"
         vpc_id: "{{ vpc.vpc.id }}"
