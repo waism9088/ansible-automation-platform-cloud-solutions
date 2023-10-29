@@ -4,6 +4,7 @@
   tasks:
     - name: Launch an EC2 Instance
       amazon.aws.ec2_instance:
+        aws_region: "ap-south-1"      
         state: absent
         filters:
               "tag:Name": Test-Ansible
