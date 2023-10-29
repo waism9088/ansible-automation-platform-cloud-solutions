@@ -43,7 +43,10 @@
         vpc_subnet_id: "{{ subnet.subnet.id }}"
         instance_type: "t2.micro"
         security_group: "{{ security_group.group_id  }}"
-        count: 1
+        exact_count: 1
+        count_tag: 
+        Env: "test"
+        Name: "test-web-01"
         wait: yes
         aws_region: "ap-south-1"
         network:
