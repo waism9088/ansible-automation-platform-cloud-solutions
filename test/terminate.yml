@@ -1,6 +1,9 @@
 ---
-- name: Terminate every running instance in a region. Use with EXTREME caution.
-  amazon.aws.ec2_instance:
-    state: absent
-    filters:
-      "tag:foo": bar
+- name: Creating an EC2 Instance with Creating a VPC and Subnet Id
+  hosts: localhost
+  tasks:
+    - name: Launch an EC2 Instance
+      amazon.aws.ec2_instance:
+        state: absent
+        filters:
+        instance-state-name: running
