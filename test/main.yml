@@ -2,5 +2,5 @@
 - name: Creating an EC2 Instance with Creating a VPC and Subnet Id
   hosts: localhost
    tasks:
-    - include_tasks: test.yml
+    - include_tasks: "test.yml"
 
