@@ -1,0 +1,2 @@
+- name: Creating an EC2 Instance with Creating a VPC and Subnet I
+  import_tasks: redhat.yml
