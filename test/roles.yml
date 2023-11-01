@@ -1,0 +1,4 @@
+---
+- hosts: webservers
+  roles:
+    - role: 'test/roles/ec2'
