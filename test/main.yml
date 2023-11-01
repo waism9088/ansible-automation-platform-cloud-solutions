@@ -7,5 +7,5 @@
 
     - name: Include task list in play
       ansible.builtin.import_tasks:
-        file: test.yaml
+        file: test.yml
 
