@@ -1,6 +1,6 @@
 ---
-- name: wasim
-  hosts: localhost
+
+- hosts: localhost
   tasks:
     - name: Create a new VPC 
       amazon.aws.ec2_vpc_net:
