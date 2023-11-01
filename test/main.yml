@@ -1,6 +1,11 @@
 ---
 - name: Creating an EC2 Instance with Creating a VPC and Subnet Id
   hosts: localhost
-   tasks:
-    - include_tasks: "test.yml"
+  tasks:
+    - ansible.builtin.debug:
+        msg: task1
+
+    - name: Include task list in play
+      ansible.builtin.import_tasks:
+        file: test.yaml
 
