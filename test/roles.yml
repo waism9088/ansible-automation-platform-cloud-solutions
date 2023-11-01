@@ -1,4 +1,4 @@
 ---
 - hosts: localhost
   roles:
-    - role: 'test/roles/ec2'
+    - role: 'roles/ec2/tasks'
